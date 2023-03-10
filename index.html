@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encrypter - Alura</title>
+  <link rel="shortcut icon" href="./img/icon.jpg" type="icon" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://kit.fontawesome.com/4b73870d5b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="main-container container">
+    <div class="logo">
+      <img src="./img/logo.png" alt="" />
+    </div>
+
+    <section class="container-left container">
+      <div class="form container" action="">
+        <textarea maxlength="355" autofocus name="input-text" id="input-text" cols="30" rows="10"
+          placeholder="start writing here ..."></textarea>
+        <div class="form-info">
+          <p class="form-info-message">
+            <span>
+              <i class="fa-solid fa-circle-info"></i>
+            </span>
+            Only lowercase letters and no accent mark
+          </p>
+          <div class="button-container container">
+            <button class="button-encrypt">Encrypt</button>
+            <button class="button-decrypt">Decrypt</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-right container">
+
+      <section class="right-not-found">
+        <img src="./img/not-found.png" alt="message not found" />
+        <p class="not-found-text__main">No message was found</p>
+        <p class="not-found-text__subtext">
+          Enter the text you want to encrypt or decrypt.
+        </p>
+      </section>
+
+      <section class="right-result container hidden ">
+        <p class="result-output"> </p>
+        <button class="button-copy">Copy</button>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      👨🏻‍💻Coded by <a href="https://github.com/arn28/">Arnold Balabarca</a> ⚙️
+    </div>
+  </footer>
+</body>
+
+</html>
