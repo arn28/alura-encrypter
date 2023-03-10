@@ -30,6 +30,56 @@ body {
   background-color: var(--background-color);
 }
 
+/* ALERT */
+#alert-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 300rem;
+}
+
+.alert {
+  position: relative;
+  top: 10;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.8;
+  border-radius: 5px;
+  cursor: hand;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+:checked + .alert {
+  display: none;
+}
+
+.alertText {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.alertClose {
+  float: right;
+  padding-top: 5px;
+  font-size: 10px;
+}
+
+.info {
+  filter: opacity(0.84);
+  background-color: var(--main-color);
+  border: 1px solid #ddd;
+  color: var(--background-color);
+  /* transition: all 1s ease-in-out; */
+}
+
 /* MAIN */
 .container {
   display: flex;
@@ -162,22 +212,23 @@ button:hover {
 }
 
 .result-output {
+  width: 100%;
   font-size: 18rem;
   margin-bottom: 24rem;
 }
-.attribution { 
+.attribution {
   width: 100%;
   position: fixed;
   bottom: 4rem;
-  font-size: 10rem; 
+  font-size: 10rem;
   text-align: center;
 }
 
-.attribution a { 
-  font-size: 10rem; 
+.attribution a {
+  font-size: 10rem;
   color: var(--main-color);
   text-decoration: none;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 @media all and (max-width: 1000px) {

@@ -9,10 +9,19 @@
   <link rel="shortcut icon" href="./img/icon.jpg" type="icon" />
   <link rel="stylesheet" href="./css/main.css" />
   <script src="https://kit.fontawesome.com/4b73870d5b.js" crossorigin="anonymous"></script>
+  <script src="./scripts/main.js" defer></script>
+
 </head>
 
 <body>
   <main class="main-container container">
+    <label id="alert-container" class="hidden">
+      <div class="alert info">
+        <span class="alertClose">X</span>
+        <span class="alertText">Text copied successfully</span>
+      </div>
+    </label>
+
     <div class="logo">
       <img src="./img/logo.png" alt="" />
     </div>
@@ -20,7 +29,7 @@
     <section class="container-left container">
       <div class="form container" action="">
         <textarea maxlength="355" autofocus name="input-text" id="input-text" cols="30" rows="10"
-          placeholder="start writing here ..."></textarea>
+          placeholder="start writing here ..." spellcheck="false"></textarea>
         <div class="form-info">
           <p class="form-info-message">
             <span>
@@ -46,8 +55,8 @@
         </p>
       </section>
 
-      <section class="right-result container hidden ">
-        <p class="result-output"> </p>
+      <section class="right-result container hidden">
+        <p class="result-output"></p>
         <button class="button-copy">Copy</button>
       </section>
     </section>
