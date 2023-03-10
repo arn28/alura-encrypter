@@ -73,7 +73,7 @@ body {
 }
 
 .info {
-  filter: opacity(0.84);
+  filter: opacity(0.8);
   background-color: var(--main-color);
   border: 1px solid #ddd;
   color: var(--background-color);
